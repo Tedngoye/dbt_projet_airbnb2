@@ -1,4 +1,13 @@
-
+# Fichiers dbt à ignorer
+dbt_modules/
 target/
 dbt_packages/
 logs/
+
+# Environnement virtuel Python
+.venv/
+.Environnement
+
+# Fichiers temporaires
+*.pyc
+__pycach__/
