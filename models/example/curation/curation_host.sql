@@ -1,8 +1,3 @@
-{{
-	config(
-		materialized = 'view'
-	)
-}}
 WITH hosts_raw AS (
     SELECT
 		host_id,

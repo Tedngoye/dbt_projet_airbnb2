@@ -1,9 +1,4 @@
 
-{{
-	config(
-		materialized = 'view'
-	)
-}}
 WITH curation_raw AS
     (
     SELECT 
