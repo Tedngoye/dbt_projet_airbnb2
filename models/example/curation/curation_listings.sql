@@ -1,3 +1,8 @@
+{{
+	config(
+		materialized = 'view'
+	)
+}}
 WITH listings_raw AS 
 	(SELECT 
 		id AS listing_id,
