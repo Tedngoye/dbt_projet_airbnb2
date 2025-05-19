@@ -2,7 +2,7 @@ version: 2
 
 sources: 
   - name: raw_airbnb_data
-    database: airbnb
+    database: airbnb2
     schema: raw
     tables:
       - name: hosts
