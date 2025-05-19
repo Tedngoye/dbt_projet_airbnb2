@@ -36,3 +36,10 @@ models:
       +materialized: table
       +schema: curation
 
+seeds:
+  analyse_airbnb:
+    tourists_per_year:
+      +enabled: true
+      +database: airbnb2
+      +schema: raw
+
