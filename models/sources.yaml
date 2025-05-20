@@ -6,5 +6,43 @@ sources:
     schema: raw
     tables:
       - name: hosts
+        columns:
+          - name: host_id
+            description: Identifiant unique de l'hote
+            tests:
+              - not_null
+              - unique
+
+          - name: host_name
+            tests:
+              - not_null
+
+          - name: host_since
+            tests:
+              - not_null
+
       - name: listings
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+
+          - name: listing_url
+            tests:
+              - not_null
+              - unique
+
+          - name: name
+            tests:
+              - not_null
+
+          - name: host_id
+            tests:
+              - not_null
+
       - name: reviews
+        columns:
+          - name: listing_id
+            tests:
+              - not_null

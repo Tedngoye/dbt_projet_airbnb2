@@ -55,4 +55,3 @@ Pour la suite (demain : 19/05/2025)
 
 Important: le nom de la base de données doit respecter la casse
 En effet, pour ce projet, le nom de ma BDD utilisée dans Snowflake est AIRBNB2 mais dans certaines partie des transformations, j'ai mis airbnb2 par conséquent, les transformations n'étaient pas appliquée comme souhaitée dans la BDD AIRBNB2.
-
