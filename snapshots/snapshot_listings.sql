@@ -2,7 +2,7 @@
 
     {{
         config(
-          target_database='airbnb2',
+          target_database='AIRBNB2',
           target_schema='snapshots',
           strategy='check',
           check_cols='all',

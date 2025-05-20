@@ -11,7 +11,9 @@ WITH hosts_raw AS (
 		host_neighbourhood,
 		host_identity_verified = 't' AS is_identity_verified
     -- FROM airbnb2.raw.hosts
-	FROM {{ source("raw_airbnb_data", "hosts")}}
+	-- FROM {{ source("raw_airbnb_data", "hosts")}}
+	FROM {{ ref("hosts_snapshot")}}
+	WHERE DBT_VALID_TO is null
 	)
 SELECT *
 from hosts_raw

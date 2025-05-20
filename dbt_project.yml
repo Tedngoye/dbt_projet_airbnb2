@@ -40,6 +40,6 @@ seeds:
   analyse_airbnb:
     tourists_per_year:
       +enabled: true
-      +database: airbnb2
+      +database: AIRBNB2
       +schema: raw
 

@@ -1,6 +1,6 @@
 with tourists_per_year as (
     SELECT year, tourists
-    --from airbnb2.raw.tourists_per_year
+    --from AIRBNB2.raw.tourists_per_year
     from {{ ref ("tourists_per_year") }}
 )
 SELECT

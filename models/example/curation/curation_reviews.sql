@@ -5,7 +5,7 @@ WITH curation_raw AS
         listing_id,
         date AS review_date,
        
-    --FROM airbnb2.raw.reviews
+    --FROM AIRBNB2.raw.reviews
     FROM {{ source("raw_airbnb_data","reviews")}}
     )
 SELECT 
