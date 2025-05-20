@@ -25,3 +25,4 @@ WITH listings_raw AS
 	)
 SELECT *
 FROM listings_raw
+WHERE price is not null

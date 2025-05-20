@@ -40,6 +40,9 @@ sources:
           - name: host_id
             tests:
               - not_null
+              - relationships:
+                  to: source('raw_airbnb_data','hosts')
+                  field: host_id
 
       - name: reviews
         columns:
